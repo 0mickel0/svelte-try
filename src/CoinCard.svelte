@@ -1,11 +1,3 @@
-<script>
-    export let coin
-
-    function changeIsPositive(priceChange) {
-        return priceChange >= 0;
-    }
-</script>
-
 <style>
     .coin-card {
         background-color: white;
@@ -51,6 +43,14 @@
         }
     }
 </style>
+
+<script>
+    export let coin
+
+    function changeIsPositive(priceChange) {
+        return priceChange >= 0;
+    }
+</script>
 
 <div class="coin-card">
     <img class="coin-image" src={coin.icon} alt="" />
